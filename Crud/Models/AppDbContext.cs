@@ -4,5 +4,5 @@ public class AppDbContext : DbContext
 {
     AppDbContext(DbContextOptions<AppDbContext> op):base(op){}
 
-    DbSet<Todo> Todos { get; set; }
+    public DbSet<Todo> Todos { get; set; }
 }
